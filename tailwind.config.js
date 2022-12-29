@@ -16,6 +16,7 @@ module.exports = {
       lg: "1024px",
       xl: "1234px",
     },
+    
     extend: {
       colors: {
         primary: "#101828",
