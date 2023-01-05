@@ -6,7 +6,7 @@ const House = ({ house }) => {
       <img
         className="mb-8 h-80 object-cover rounded-tl-[80px] rounded-br-[80px] rounded-tr-[10px] rounded-bl-[10px]"
         src={house.imageLg}
-        alt="house"
+        alt=""
       />
       <div className="mb-4 flex gap-x-2 text-sm">
         <div className="bg-green-500 rounded-full text-white px-3 inline-block">

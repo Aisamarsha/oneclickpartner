@@ -31,7 +31,7 @@ const PropertyDetail = () => {
       <div className='flex flex-col items-start gap-8 lg:flex-row'>
         <div className='max-w-[768px]'>
           <div className='mb-8'>
-            <img src={property.imageLg} alt='' />
+            <img className="rounded-lg" src={property.imageLg} alt='' />
           </div>
           <div className='flex gap-x-6 text-violet-700 mb-6'>
             <div className='flex gap-x-2 items-center'>
