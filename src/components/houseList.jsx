@@ -1,6 +1,6 @@
 import { housesData as houses } from "../data";
 import { Link } from "react-router-dom";
-import House from './house'
+import House from "./house";
 
 const HouseList = () => {
   return (

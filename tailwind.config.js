@@ -3,6 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: "Poppins",
+      body: "Arial",
     },
     container: {
       padding: {
@@ -16,7 +17,6 @@ module.exports = {
       lg: "1024px",
       xl: "1234px",
     },
-    
     extend: {
       colors: {
         primary: "#101828",

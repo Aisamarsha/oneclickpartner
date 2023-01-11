@@ -12,11 +12,11 @@ const Header = () => {
   };
 
   return (
-    <header className="py-6 border-b">
+    <header className="py-6 border-b bg-violet-200">
       <div className="container mx-auto flex justify-between items-center ">
         <NavLink to="/">
-          <h1 className="text-3xl font-semibold leading-none">
-            1 Click Partner <span className="text-violet-700 text-4xl">.</span>
+          <h1 className="text-3xl font-bold leading-none   p-2 text-violet-700 rounded-xl ">
+            1 Click Partner <span className="text-white text-4xl">.</span>
           </h1>
         </NavLink>
 
@@ -27,7 +27,7 @@ const Header = () => {
           <HiMenu className="scale-150 text-white hover:text-purple-500 " />
         </div>
 
-        <div className="hidden md:flex items-center gap-2">
+        <div className="hidden md:flex items-center gap-2 bg-violet-500 rounded-xl text-white p-2">
           <NavLink
             className={({ isActive }) =>
               isActive

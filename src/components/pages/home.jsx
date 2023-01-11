@@ -4,7 +4,7 @@ import HouseList from "../houseList";
 const Home = () => {
   return (
     <div className="min-h-[1800px]">
-      <Banner />  
+      <Banner />
       <HouseList />
     </div>
   );

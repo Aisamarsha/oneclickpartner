@@ -5,7 +5,7 @@ const ResponsiveHeader = ({ showMenu, active }) => {
     <ul
       className={
         active
-          ? "flex-col flex items-center fixed inset-0  left-1/3 bg-purple-500 backdrop-blur-lg gap-0 p-10 rounded-lg md:hidden"
+          ? "flex-col flex items-center fixed inset-0  left-1/3 bg-violet-200 backdrop-blur-lg gap-0 p-10 rounded-lg md:hidden"
           : "hidden"
       }
     >
