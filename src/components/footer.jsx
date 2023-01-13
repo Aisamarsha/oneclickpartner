@@ -2,7 +2,7 @@ const Footer = () => {
   return (
     <footer className="bg-violet-700 text-white p-8 flex flex-col items-center ">
       <div className="w-full flex flex-col md:flex-row items-center justify-between">
-        <div className="w-full md:w-1/3 md:pr-8">
+        <div className="w-full md:w-1/3 md:pr-8 md:border-r-2">
           <h4 className="font-bold text-xl mb-4">About Us</h4>
           <p className="mb-8 text-sm">
             Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -55,7 +55,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full md:w-1/3 md:px-8">
+        <div className="w-full md:w-1/3 md:px-8 md:border-r-2">
           <h4 className="font-bold text-xl mb-4">Contact Us</h4>
           <ul className="list-reset text-sm">
             <li className="mb-2">
@@ -75,7 +75,7 @@ const Footer = () => {
             </li>
           </ul>
         </div>
-        <div className="w-full md:w-1/3">
+        <div className="w-full md:w-1/3 md:px-8">
           <h4 className="font-bold text-xl mb-4">Newsletter</h4>
           <p className="mb-4 text-sm">
             Subscribe to our newsletter to stay up to date on the latest news
@@ -100,7 +100,7 @@ const Footer = () => {
       </div>
       <div className="mt-8">
         <p className="text-center text-xs text-white">
-          &copy; 2022 ONE CLICK PARTNER. All rights reserved.
+          &copy; 2023 ONE CLICK PARTNER. All rights reserved.
         </p>
       </div>
     </footer>

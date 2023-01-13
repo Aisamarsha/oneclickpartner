@@ -6,6 +6,7 @@ import MortgageCalculator from "./components/pages/mortgageCalculator";
 import Footer from "./components/footer";
 import ScrollToTop from "./components/scrollToTop";
 import Insuarances from "./components/pages/insuarances";
+import Mortgage from "./components/pages/mortgages/mortgage";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/property/:id" element={<PropertyDetail />} />
         <Route path="/calculator" element={<MortgageCalculator />} />
         <Route path="/insuarance" element={<Insuarances />} />
+        <Route path="/mortgage" element={<Mortgage />} />
       </Routes>
       <Footer />
     </div>
