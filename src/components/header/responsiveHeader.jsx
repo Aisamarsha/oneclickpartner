@@ -25,7 +25,7 @@ const ResponsiveHeader = ({ showMenu, active }) => {
         Home
       </NavLink>
 
-      <NavLink
+      {/* <NavLink
         className={({ isActive }) =>
           isActive
             ? "bg-violet-700 w-full hover:bg-violet-800 text-white px-4 py-3 rounded-lg transition"
@@ -34,7 +34,7 @@ const ResponsiveHeader = ({ showMenu, active }) => {
         to="/sales-lettings"
       >
         Sales Lettings
-      </NavLink>
+      </NavLink> */}
 
       <NavLink
         className={({ isActive }) =>
@@ -64,17 +64,6 @@ const ResponsiveHeader = ({ showMenu, active }) => {
             ? "bg-violet-700 w-full hover:bg-violet-800 text-white px-4 py-3 rounded-lg transition"
             : "w-full px-4 py-3 text-white hover:text-violet-900 transition"
         }
-        to="/solicitor"
-      >
-        Solicitor
-      </NavLink>
-
-      <NavLink
-        className={({ isActive }) =>
-          isActive
-            ? "bg-violet-700 w-full hover:bg-violet-800 text-white px-4 py-3 rounded-lg transition"
-            : "w-full px-4 py-3 text-white hover:text-violet-900 transition"
-        }
         to="/calculator"
       >
         Calculator
@@ -89,6 +78,16 @@ const ResponsiveHeader = ({ showMenu, active }) => {
         to="/valuation"
       >
         Valuation
+      </NavLink>
+      <NavLink
+        className={({ isActive }) =>
+          isActive
+            ? "bg-violet-700 w-full hover:bg-violet-800 text-white px-4 py-3 rounded-lg transition"
+            : "w-full px-4 py-3 text-white hover:text-violet-900 transition"
+        }
+        to="/solicitor"
+      >
+        Solicitor
       </NavLink>
 
       <NavLink

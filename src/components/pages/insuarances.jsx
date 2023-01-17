@@ -2,18 +2,39 @@ import coverPhoto from "../../assets/img/home-insurance-mortgage.png";
 const Insuarances = () => {
   return (
     <div className=" min-h-screen ">
-      <div className="container py-6 sm:px-20 px-4">
-        <img className="w-full h-[350px] object-cover mb-10" src={coverPhoto} />
-        <h1 className="text-4xl font-bold mb-4 text-violet-700">
-          Types of Insurances we Offer
-        </h1>
-        <p className="text-xl mb-4  ">
-          Here is all you need to know about our Insurances!
-        </p>
+      <div className="container py-6 sm:px-20 px-4 ">
+        <div className="flex gap-10">
+          <div className=" ">
+            <h1 className="text-4xl font-bold mb-4 text-violet-700">
+              Types of Insurances we Offer
+            </h1>
+            <p className="text-xl mb-4  ">
+              Here is all you need to know about our Insurances!
+            </p>
+            <p className=" text-justify text-gray-600 text-md">
+              Insurance is a crucial aspect of real estate and mortgage
+              transactions, as it helps to protect both the property owner and
+              the lender from financial losses and legal liabilities. Our
+              company offers a range of insurance products, including life
+              cover, critical illness cover, income protection, building and
+              contents coverage. These policies are designed to provide
+              financial protection in case of unfortunate events such as death,
+              serious illness, loss of income, damage to the building and its
+              contents. Having insurance in place can give peace of mind and
+              security to both property owners and lenders, knowing that they
+              are protected from financial losses. It's important to have the
+              right insurance in place to protect your assets and investment.
+            </p>
+          </div>
+          <img
+            className="w-1/3 h-[350px] object-cover mb-10 rounded-tl-[80px] rounded-br-[80px] rounded-tr-[10px] rounded-bl-[10px]"
+            src={coverPhoto}
+          />
+        </div>
         <div className="text-lg  p-4 rounded-xl border-violet-700">
-          <span className="text-violet-700 font-bold">Life Cover</span>
+          <span className="text-violet-700 text-2xl font-bold">Life Cover</span>
           <div className="text-sm ">
-            <p className="my-0.5 p-1 text-justify">
+            <p className="my-0.5 p-1 text-justify text-md">
               Death is a terrible event and unfortunately something that
               everyone will have to experience at some time or another and
               having life cover in place can help. If life cover were to be
@@ -21,7 +42,7 @@ const Insuarances = () => {
               pain and anguish can be avoided so that our family members can
               grieve appropriately.
             </p>
-            <p className="my-0.5   p-1 text-justify">
+            <p className="my-0.5   p-1 text-justify text-md">
               Providing life cover for yourself and your partner comes at a very
               minimal cost, thus allowing you to ensure that your family members
               can grieve in peace. At Broker Advice we do not want to see you in
@@ -29,13 +50,13 @@ const Insuarances = () => {
               which is why we encourage you to take out a simple life cover
               policy.
             </p>
-            <p className="my-0.5   p-1 text-justify">
+            <p className="my-0.5   p-1 text-justify text-md">
               This will ensure that your partner does not have the additional
               burden of paying a mortgage without any help, which could force
               them to abandon their lifestyle in order to cater for these
               expenses.
             </p>
-            <p className="my-0.5   p-1 text-justify">
+            <p className="my-0.5   p-1 text-justify text-md">
               The competitive and comprehensive products that we will offer you
               come from a selection of the UK’s top insurance providers, with
               names including Zurich, Aviva, AIG,LIverpool Victoria,Legal &
@@ -48,11 +69,11 @@ const Insuarances = () => {
         </div>
 
         <div className="text-lg p-4 rounded-xl border-violet-700 mt-3">
-          <span className="text-violet-700 font-bold">
+          <span className="text-violet-700 text-2xl font-bold">
             Critical Illness Cover
           </span>
           <div className="text-sm">
-            <p className="my-0.5 p-1 text-justify">
+            <p className="my-0.5 p-1 text-justify text-md">
               A critical illness can affect anyone and if you are prepared for
               such circumstances then you can focus on your recovery rather than
               worrying about what will happen to your financial situation.
@@ -63,7 +84,7 @@ const Insuarances = () => {
               Whatever the purpose of the money, a critical illness payment can
               be of great help to you at these times, alleviating your worries.
             </p>
-            <p className="my-0.5 p-1 text-justify">
+            <p className="my-0.5 p-1 text-justify text-md">
               And how will you know if you’re covered? Lenders of critical
               illness cover will outline the list of illnesses that are covered
               in their policy, so that you are fully informed from the outset of
@@ -76,14 +97,14 @@ const Insuarances = () => {
         </div>
 
         <div className="text-lg p-4 rounded-xl border-violet-700">
-          <span className="text-violet-700 font-bold">Income Protection</span>
+          <span className="text-violet-700 text-2xl font-bold">Income Protection</span>
           <div className="text-sm">
-            <p className="my-0.5 p-1 text-justify">
+            <p className="my-0.5 p-1 text-justify text-md">
               If for some reason your wages cease, what would you do? Life,
               bills and mortgage payments aren’t going to wait for you to catch
               up, they will continue to demand your attention.
             </p>
-            <p className="my-0.5 p-1 text-justify">
+            <p className="my-0.5 p-1 text-justify text-md">
               Luckily for you, if you take out income protection you can avoid
               any unpleasant demands and get back on track with great ease. If
               you are unable to work due to an accident or illness then an
@@ -96,11 +117,11 @@ const Insuarances = () => {
           </div>
         </div>
         <div className="text-lg p-4 rounded-xl border-violet-700">
-          <span className="text-violet-700 font-bold">
+          <span className="text-violet-700 text-2xl font-bold">
             Buildings & Contents
           </span>
           <div className="text-sm">
-            <p className="my-0.5 p-1 text-justify">
+            <p className="my-0.5 p-1 text-justify text-md">
               A good buildings and contents insurance policy is crucial to
               protecting your home and belongings. Unfortunately, many people do
               not value the importance of this type of policy until it is too
@@ -108,7 +129,7 @@ const Insuarances = () => {
               no current claims to make then it is time to attain a great
               buildings and contents scheme.
             </p>
-            <p className="my-0.5 p-1 text-justify">
+            <p className="my-0.5 p-1 text-justify text-md">
               The most commonly occurring problem that applicants tend to make
               is placing an incorrect value on their possessions which then
               leads to difficulties in making claims. At Broker Advice we

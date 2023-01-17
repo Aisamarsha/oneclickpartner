@@ -6,6 +6,7 @@ import ResponsiveHeader from "./responsiveHeader";
 
 const Header = () => {
   const [active, setActive] = useState(false);
+  const [mortgageActive, setMortgageActive] = useState(false);
 
   const showMenu = () => {
     setActive(!active);
@@ -39,7 +40,7 @@ const Header = () => {
             Home
           </NavLink>
 
-          <NavLink
+          {/* <NavLink
             className={({ isActive }) =>
               isActive
                 ? "bg-violet-700 hover:bg-violet-800 text-white p-2 rounded-lg transition"
@@ -48,18 +49,63 @@ const Header = () => {
             to="/sales-lettings"
           >
             Sales Lettings
-          </NavLink>
+          </NavLink> */}
 
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "bg-violet-700 hover:bg-violet-800 text-white p-2 rounded-lg transition"
-                : "p-2 hover:text-violet-900 transition "
-            }
-            to="/mortgage"
-          >
-            Mortgage
-          </NavLink>
+          <div className="relative">
+            <NavLink
+              className={({ isActive }) =>
+                isActive
+                  ? "bg-violet-700 hover:bg-violet-800 text-white p-2 rounded-lg transition"
+                  : "p-2 hover:text-violet-900 transition "
+              }
+              to="/mortgage"
+              onMouseEnter={() => setMortgageActive(true)}
+              onMouseLeave={() => setMortgageActive(false)}
+            >
+              Mortgage
+            </NavLink>
+            {mortgageActive && (
+              <div
+                className="absolute w-auto gap-2 w-32 bg-white rounded-xl text-violet-700 border-violet-700 border p-2 flex flex-col "
+                style={{ position: "absolute", top: "130%" }}
+                onMouseEnter={() => setMortgageActive(true)}
+                onMouseLeave={() => setMortgageActive(false)}
+              >
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "p-2 rounded-md text-white bg-violet-700 transition"
+                      : "p-2 rounded-md hover:text-white hover:bg-violet-700 transition"
+                  }
+                  to="/mortgage/first-time-buyer"
+                >
+                  First Time Buyer
+                </NavLink>
+
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "p-2 rounded-md text-white bg-violet-700 transition"
+                      : "p-2 rounded-md hover:text-white hover:bg-violet-700 transition"
+                  }
+                  to="/mortgage/home-movers"
+                >
+                  Home Movers
+                </NavLink>
+
+                <NavLink
+                  className={({ isActive }) =>
+                    isActive
+                      ? "p-2 rounded-md text-white bg-violet-700 transition"
+                      : "p-2 rounded-md hover:text-white hover:bg-violet-700 transition"
+                  }
+                  to="/mortgage/remortgage"
+                >
+                  Remortgage
+                </NavLink>
+              </div>
+            )}
+          </div>
 
           <NavLink
             className={({ isActive }) =>
@@ -70,17 +116,6 @@ const Header = () => {
             to="/insuarance"
           >
             Insuarance
-          </NavLink>
-
-          <NavLink
-            className={({ isActive }) =>
-              isActive
-                ? "bg-violet-700 hover:bg-violet-800 text-white p-2 rounded-lg transition"
-                : "p-2 hover:text-violet-900 transition "
-            }
-            to="/solicitor"
-          >
-            Solicitor
           </NavLink>
 
           <NavLink
@@ -104,7 +139,16 @@ const Header = () => {
           >
             Valuation
           </NavLink>
-
+          <NavLink
+            className={({ isActive }) =>
+              isActive
+                ? "bg-violet-700 hover:bg-violet-800 text-white p-2 rounded-lg transition"
+                : "p-2 hover:text-violet-900 transition "
+            }
+            to="/solicitor"
+          >
+            Solicitor
+          </NavLink>
           <NavLink
             className={({ isActive }) =>
               isActive

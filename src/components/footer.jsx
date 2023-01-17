@@ -65,13 +65,13 @@ const Footer = () => {
             </li>
             <li className="mb-2">
               <a href="#" className="text-white hover:text-violet-200">
-                (123) 456-7890
+                +44 7590 519314
               </a>
             </li>
             <li className="mb-2">
-              123 Main Street, Suite 200
+              679/691 High Road
               <br />
-              Anytown, USA 12345
+              E10 6RA London, UK
             </li>
           </ul>
         </div>
